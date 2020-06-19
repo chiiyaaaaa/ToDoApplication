@@ -1,0 +1,45 @@
+<app-to-do-list [toDoDetailsDrawList] = "toDoDetailsList" ></app-to-do-list>
+<div class = "forms">
+    <form>
+        <div class="taskdetail">
+        <h1>{{toDoFormTitle}}</h1>
+        
+        <!--タスク内容を入力するフォームの作成-->
+        <div id = "taskdetail_name">
+            <label for = "name">タスク内容</label>
+        </div> 
+        <br><br>
+        <div id = "taskdetail_text">
+            <input type = "text" name = "detail" id="name" required="required"
+             style="width:100%; box-sizing:border-box" placeholder = "タスクの内容を入力してください"/>
+        </div>
+
+        <br>
+        <!--タスク優先度を選択するフォームの作成-->
+        <div id = "taskdetail_priority">
+            <label for = "priority">タスク優先度</label>
+        </div>
+        <br><br>
+        <div id = "selectedpriority" style="padding: 5px; margin-bottom: 10px; border: 1px solid #000000; background-color: white; width:250px; height: 20px;">
+            <input type="radio" id="high_priority"   name="priority" value="高"> 高
+            <input type="radio" id="center_priority" name="priority" value="中"> 中
+            <input type="radio" id="low_priority"    name="priority" value="低"> 低
+        </div>
+        
+        <!--タスク期限を選択するフォームの作成-->
+        <div id = "taskdetail_term">
+            <label for="term">期限</label>
+        </div>
+        <div id = "taskdetail_calendar">
+            <input type="date" required id="taskcalendar" style="width:300px; height: 30px; border: solid 1px #000;"/>
+        </div>
+
+        <!--追加ボタン-->
+        <div id="taskdetail_Addinformation">
+           <input type="button" value="追加" id="addbutton" disabled="disabled"
+           style="width:200px; height: 50px; background-color: rgb(196, 217, 255);"
+           (click) = "addButtonClick()"
+           />
+        </div>
+    </div>
+</form>

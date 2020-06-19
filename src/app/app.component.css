@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(228, 244, 255);
+ }
+
+h1 {
+    padding: .3em;
+    max-width: 500px;
+    text-align: center;
+	border: solid 2px #90CAF9;
+    background-color: rgb(228, 244, 255);
+}

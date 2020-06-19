@@ -1,0 +1,28 @@
+<div *ngIf="selectedToDoDetails">
+    <div id = "overlay" class="overlay">
+        <div id = "modal" class="modal">
+            <h1>編集画面</h1>
+            
+            <div  id="editingformtask" class = "editingformtaskclass">       
+                <input id="editingtaskdetail" type="text" [(ngModel)]="selectedToDoDetails.taskdetailText"  style="width:200px; height: 30px; background-color: rgb(255, 255, 255);">
+            </div>
+            <br>
+
+            <div id="editng_priority" class="editingformstateclass" style="padding: 5px; margin-bottom: 10px; border: 1px solid #000000; background-color: white; width:250px; height: 20px;">
+                <input  type="radio" [(ngModel)]="selectedToDoDetails.taskdetailState" value="高"> 高
+                <input  type="radio" [(ngModel)]="selectedToDoDetails.taskdetailState" value="中"> 中
+                <input  type="radio" [(ngModel)]="selectedToDoDetails.taskdetailState" value="低"> 低
+            </div>
+            <br>
+
+            <div id="editingterm" class = "editingformtermclass">
+                <input id="editingtaskTerm" type="date" [(ngModel)]="selectedToDoDetails.taskdetailTerm" style="width:300px; height: 30px; border: solid 1px #000;"/>    
+            </div>
+            <br>
+            
+            <div id="editingfinshbutton" class = "editingformfinshclass">
+                <input type="button"  (click) = "finshButton()" value="完了" style="width:60px; height: 33px; background-color: rgb(255, 255, 255);"/>
+            </div>
+        </div>
+    </div>
+</div>

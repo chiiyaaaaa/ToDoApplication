@@ -1,0 +1,19 @@
+<h1>{{ToDoListtitle}}</h1>
+<app-editing-component [selectedToDoDetails] = "selectedToDoDetails" [selectedindex] = "selectedindex" [toDoList] = "toDoDetailsDrawList" ></app-editing-component>
+<div *ngIf="toDoDetailsDrawList">
+    <ul class="toDoDetailsDrawClass">
+        <li *ngFor="let taskDetails of toDoDetailsDrawList; index as i">            
+            <div class="tasktext" id="taskdetail{{i}}">
+                <label>&nbsp;&nbsp;タスク内容:&nbsp;{{taskDetails.taskdetailText}}</label>
+            </div>
+            <div class="tasktextStateAndTrem" id="tasktextStateAndTrem{{i}}">
+                <label>&nbsp;&nbsp;優先度&nbsp;&nbsp;{{taskDetails.taskdetailState}}</label>
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期限&nbsp;&nbsp;{{taskDetails.taskdetailTerm}}</label>
+            </div>
+            <label id="taskcheck"><input type="checkbox" name="taskcheck{{i}}" id="task{{i}}"  (change)="chenge(i)">完了</label>
+            <button id="editingbutton" (click)="editingbutton(taskDetails , i)">編集</button>
+            <ng-container *ngComponentOutlet="modal"></ng-container>
+            <button id="deletebutton" (click)="deletebutton(i)">削除</button>
+        </li>
+    </ul>
+</div>

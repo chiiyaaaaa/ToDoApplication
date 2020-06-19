@@ -1,0 +1,77 @@
+.forms {
+    padding-bottom: 50px;
+    background-color: rgb(117, 252, 162);
+    width: 800px;
+    height: 300px;
+    position: relative;
+    margin-left: 225px;
+    margin-right: 225px;
+    border: solid 2px #000000;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+#taskdetail_name {
+    padding: .3em;
+    text-align: center;
+    border: solid 2px #000000;
+    background-color: rgb(147, 255, 183);
+    display:block;
+    float:left;
+    width:200px;
+    height: 20px;
+}
+
+#taskdetail_text {
+    display: flex; 
+    height: 35px;
+    position: relative;
+    top: -15px;
+    left:0px;
+}
+
+#taskdetail_priority {
+    padding: .3em;
+    text-align: center;
+    border: solid 2px #000000;
+    background-color: rgb(147, 255, 183);
+    display:block;
+    float:left;
+    width:200px;
+    height: 20px;
+}
+
+#selectedpriority {
+    position: relative;
+    top: -16px;
+    left:0px;
+}
+
+#taskdetail_term {
+    padding: .3em;
+    text-align: center;
+    border: solid 2px #000000;
+    background-color:rgb(147, 255, 183);
+    display:block;
+    float:left;
+    width:200px;
+    height: 20px;
+    position: relative;
+    left: 400px;
+    top: -89px;
+}
+
+#taskdetail_calendar {
+    position: relative;
+    left: 187px;
+    top: -56px;
+}
+
+#taskdetail_Addinformation {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

@@ -1,0 +1,58 @@
+h1 {
+    text-align: center;
+}
+
+.overlay {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    padding-top: 100%;
+    overflow: hidden; 
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: fixed;
+    margin: auto;
+    left: 220px;
+    top: 0px;
+    overflow: hidden;
+    height: 400px;
+    width: 850px;
+    background-color: rgb(229, 241, 247);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+    border: solid 1px rgb(0, 0, 0);
+    z-index: 1001;
+  }
+  
+.editingformtaskclass {
+    position: relative;
+    top: 0px;
+    left: 10px;
+}
+
+.editingformstateclass {
+    position: relative;
+    top: 0px;
+    left: 10px
+}
+
+.editingformtermclass {
+    position: relative;
+    top: 0px;
+    left: 10px;
+}
+
+.editingformfinshclass {
+    position: relative;
+    top: 0px;
+    left: 10px;
+}

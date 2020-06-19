@@ -1,0 +1,61 @@
+h1 {
+    padding: .3em;
+    max-width: 200px;
+    text-align: center;
+	border: solid 2px #90CAF9;
+    background-color: rgb(228, 244, 255);
+}
+
+ul {
+    width: 800px; 
+    position: relative;
+    margin-left: 185px;
+    margin-right: 225px;
+}
+
+li {
+    list-style: none;
+}
+
+#toDoDetailsStateAndTermClass {
+    position: relative;
+    top: -15px;
+}
+
+.tasktext {
+    margin: 0em;
+    padding: 0em;
+    height: 30px;
+    background-color: white; /* 背景色 */
+    border: 1px solid #000000; /* 枠線 */
+    line-height: 35px; 
+}
+
+.tasktextStateAndTrem {
+    margin: 0em;
+    padding: 0em;
+    height: 40px;
+    background-color: rgb(241, 241, 241); /* 背景色 */
+    border: 1px solid #000000; /* 枠線 */
+    line-height: 45px; 
+}
+
+#taskcheck {
+    position: relative;
+    top: -30px;
+    left: 450px;
+}
+
+#editingbutton {
+    position: relative;
+    top: -32px;
+    left: 490px;
+    background-color:rgb(103, 253, 103);
+}
+
+#deletebutton {
+    position: relative;
+    top: -32px;
+    left: 530px;
+    background-color: rgb(250, 101, 101);
+}
